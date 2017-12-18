@@ -1,0 +1,15 @@
+Authentication
+===============
+
+Back End Server Setup
+=======================
+React just requires data in JSON format.
+
+Cookies
+- Unique to each domain
+- Cannot be sent to different domains
+- Automatically included in all HTTP req by default
+
+Token (Latest)
+- Have to manually wire up
+- Can be sent to any domain

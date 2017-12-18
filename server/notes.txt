@@ -1,0 +1,28 @@
+To Setup
+================
+npm install --save express mongoose morgan body-parser
+
+To Run
+=========
+node index.js
+
+Middlewhere
+============
+Morgan is about logging incoming HTTP requests
+BodyParser attempts to parse everything to JSON
+Nodemon watches the file directory for any changes (Add a script CLI command for this in package.json)
+
+
+// Tech Stack
+HTTP-Module (Handle HTTP Requests)
+BodyParser (Help Parse Incoming HTTP Requests)
+Morgan (Logging)
+Express (Parse response + routing)
+
+MongoDB (Storing data)
+Mongoose (Working with MongoDB)
+
+Bcrypt-Node.js (Storing a users password safely)
+Passport JWT (Authenticating users via JWT)
+Passport Local (Authenticating users with a username/password)
+Passport JS (Authenticating users)

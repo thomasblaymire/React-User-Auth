@@ -5,6 +5,7 @@ npm install --save express mongoose morgan body-parser
 To Run
 =========
 node index.js
+npm run dev
 
 Middlewhere
 ============
@@ -26,3 +27,7 @@ Bcrypt-Node.js (Storing a users password safely)
 Passport JWT (Authenticating users via JWT)
 Passport Local (Authenticating users with a username/password)
 Passport JS (Authenticating users)
+
+Bcrytpt
+============
+To allow us to encrypt our passwords so they are not saved as plain text

@@ -31,3 +31,12 @@ Passport JS (Authenticating users)
 Bcrytpt
 ============
 To allow us to encrypt our passwords so they are not saved as plain text
+
+JWT Simple
+=======================
+This is the package used to setup our JWT in the first place.
+
+Passport Express
+=======================
+npm install --save passport passport-jwt.
+Passport allows us to check what specific routes need authenticaiton.

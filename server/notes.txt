@@ -31,6 +31,10 @@ Passport JS (Authenticating users)
 Bcrytpt
 ============
 To allow us to encrypt our passwords so they are not saved as plain text
+Create a salt key that is then added to the plain password that created a salt + hashed password. We save this in the DB.
+Then when a user wants to authenticate we pull out just the salt and use it to encrypt the submitted password that will produce a hashed password.
+Then we compare the hashed password with what was initially stored in the DB.
+
 
 JWT Simple
 =======================

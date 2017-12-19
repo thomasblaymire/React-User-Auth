@@ -31,11 +31,11 @@ userSchema.pre('save', function(next) {
 });
 
 //User schema adding an instance method called compare password
-userSchema.methods.comparePassword = function(canditatePassword, callback) {
-    becrypt.compare(candidatePassword, this.password, function(err, isMatch) {
+userSchema.methods.comparePassword = function(candidatePassword, callback) {
+    bcrypt.compare(candidatePassword, this.password, function(err, isMatch) {
         if (err) { return callback(err); }
 
-        callback(null, isMath);
+        callback(null, isMatch);
     });
 }
 

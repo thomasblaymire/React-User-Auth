@@ -3,12 +3,16 @@ const passportService = require('./services/passport');
 const passport = require('passport');
 
 // By default passport will create a cookie session so set that to false
+// Helpers requireAuth and requireSignin
 const requireAuth = passport.authenticate('jwt', {session: false});
+const requireSignin = passport.authenticate('local', { session: false });
+
 
 module.exports = function(app) {
     app.get('/', requireAuth, function(req, res) {
         res.send({ hi: 'there' });
     });
+    app.post('/signin', requireSignin, Authentication.signin);
     app.post('/signup', Authentication.signup);
 }
 

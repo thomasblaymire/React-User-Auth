@@ -40,3 +40,8 @@ Passport Express
 =======================
 npm install --save passport passport-jwt.
 Passport allows us to check what specific routes need authenticaiton.
+There are vairous different passport strategys for example:
+
+Strategy 1: Verify user with a JwtStrategy
+Strategy 2: Verify user with a username and password
+Strategy 3: Verify Facebook Login

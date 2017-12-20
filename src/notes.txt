@@ -13,3 +13,37 @@ Cookies
 Token (Latest)
 - Have to manually wire up
 - Can be sent to any domain
+
+
+Redux form
+============
+npm install --save redux-form
+
+1. In the component export the default reduxForm with name and fields
+2. Import reducer from redux-form within the reducers index.js
+3. ES6 change import names within file import { reducer as form } so this is now refered to as form
+
+Redux Thunk Middlewhere Library
+============
+An action creator always returns an object.
+The object is what we call an action and the action has a type.
+
+uness... you install Redux thunk
+
+Redux thunk allows you to return a function from an action creator instead of an action.
+It is Automatically called for us with the dispatch method.
+Dispatch accepts an action and then forwards it across to all the reducers in the application.
+
+CORS (Cross Origin Resource Sharing)
+============
+Browser secuirty feature to prevent header manipulation.
+No permanent fix for the clinet side apart from temporaty Chrome Plugins.
+Fix generally server side to allow connections API.
+npm install --save cors
+add in the server config require module and add app.use(cors())
+
+LocalStorage &JWT
+============
+localStorage is storing something to the users local device or machine.
+We must save the JWT to the browser so when a user re-visits we can read that in and authenticate.
+localStorage is unique to the domain

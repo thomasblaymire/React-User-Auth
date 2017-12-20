@@ -49,3 +49,11 @@ There are vairous different passport strategys for example:
 Strategy 1: Verify user with a JwtStrategy
 Strategy 2: Verify user with a username and password
 Strategy 3: Verify Facebook Login
+
+CORS (Cross Origin Resource Sharing)
+============
+Browser secuirty feature to prevent header manipulation.
+No permanent fix for the clinet side apart from temporaty Chrome Plugins.
+Fix generally server side to allow connections API.
+npm install --save cors
+add in the server config require module and add app.use(cors())
